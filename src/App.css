@@ -1,0 +1,276 @@
+HTML,
+body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  overflow-x: hidden;
+}
+
+:root {
+  --main-bg-color: #ffffff;
+  --main-text-color: #373534;
+  --alternate-text-color: #ffffff;
+  --accent-color-blue: #008beb;
+  --accent-color-red: #dc4536;
+  --btn-background-color: #008beb;
+  --btn-hover-color: rgba(0, 139, 235, 0.7);
+  --success-color: green;
+  --error-color: red;
+  --main-border-color: #373534;
+  --alternate-border-color: #008beb;
+  --text-font: "Lato", sans-serif;
+  --sub-weight: 700;
+  --title-weight: 900;
+  --margin-main: 10px 150px 0 150px;
+  --margin-alt: 0 75px 0 75px;
+  --margin-mobile: 0 25px 0 25px;
+}
+
+.arrow {
+  position: relative;
+  left: 80vw;
+  bottom: 150px;
+  font-size: 3rem;
+  color: #008beb;
+}
+
+.arrow:hover {
+  animation: grow;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+  cursor: pointer;
+}
+
+.link {
+  border: none;
+  background: none;
+  text-decoration: none;
+  display: flex;
+  height: inherit;
+  width: inherit;
+}
+
+.h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  padding: 50px 0 0 0;
+  font-weight: var(--title-weight);
+  font-family: var(--text-font);
+}
+
+.h2 {
+  font-size: 2rem;
+  color: var(--accent-color-blue);
+  font-family: var(--text-font);
+}
+
+.h3 {
+  font-size: 1.5rem;
+  color: var(--accent-color-blue);
+  font-family: var(--text-font);
+}
+
+.p {
+  font-size: 1.2rem;
+  font-family: var(--text-font);
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes grow {
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes tilegrow {
+  100% {
+    transform: scale(1.05);
+  }
+}
+@keyframes tilefade {
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes buttonfill {
+  0% {
+    background-color: inherit;
+  }
+  25% {
+    color: var(--alternate-text-color);
+  }
+  100% {
+    background-color: var(--accent-color-blue);
+    color: var(--alternate-text-color);
+  }
+}
+@keyframes buttonfillalt {
+  0% {
+    background-color: inherit;
+  }
+  25% {
+    color: var(--alternate-text-color);
+  }
+  100% {
+    background-color: var(--alternate-text-color);
+    color: var(--accent-color-blue);
+  }
+}
+
+@media (max-width: 1300px) {
+  .nav-wrapper {
+    margin: var(--margin-alt);
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+
+  .h1 {
+    padding: 25px 0 0 0;
+  }
+}
+
+@media (max-width: 1250px) {
+  .skill:nth-child(2) {
+    border: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .nav-wrapper {
+    margin: var(--margin-mobile);
+  }
+  #logo {
+    height: 60%;
+  }
+  .intro-wrapper {
+    height: 85vh;
+  }
+  .intro-wrapper h1 {
+    font-size: 2rem;
+    width: 75vw;
+  }
+  .intro-wrapper h3 {
+    font-size: 1rem;
+    width: 75vw;
+  }
+
+  .about-bio h2 {
+    width: 75vw;
+    font-size: 1.5rem;
+  }
+
+  .about-bio p {
+    width: 75vw;
+    font-size: 1rem;
+  }
+
+  .animation-wrapper {
+    width: 250px;
+  }
+
+  .skill h1 {
+    font-size: 2rem;
+  }
+
+  .skill h2 {
+    font-size: 1.5rem;
+  }
+
+  .skill h3 {
+    font-size: 1.25rem;
+  }
+
+  .skill p {
+    font-size: 1rem;
+  }
+
+  .skills-cont {
+    width: 80%;
+  }
+
+  .projects-wrapper h2 {
+    font-size: 1.5rem;
+  }
+  .projects-wrapper p {
+    font-size: 1rem;
+  }
+
+  .tile {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    align-items: center;
+    text-align: center;
+    height: 250px;
+  }
+
+  .tile-img-cont {
+    width: 150px;
+    height: auto;
+  }
+
+  .project-content-cont {
+    width: 85%;
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+
+  .arrow {
+    left: 45%;
+    right: 0;
+  }
+
+  .tile-link-cont {
+    justify-content: center;
+  }
+
+  .tile-support-cont p {
+    font-size: 1rem;
+  }
+
+  .tile-link-cont button {
+    font-size: 1rem;
+  }
+
+  .footer-img-cont h3 {
+    font-size: 1.2rem;
+    width: 80%;
+    padding-top: 25px;
+  }
+
+  .contact-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .name-email-cont {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .name-email-cont input {
+    width: 300px;
+  }
+
+  .message {
+    width: 300px;
+  }
+
+  #message-send {
+    font-size: 20px;
+  }
+}

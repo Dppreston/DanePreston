@@ -1,0 +1,51 @@
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: 15vh;
+  margin: var(--margin-main);
+}
+
+.logo-cont {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+#logo {
+  width: auto;
+  height: 70%;
+}
+
+.link-cont {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  width: auto;
+  height: auto;
+}
+
+.btn {
+  font-family: var(--text-font);
+  font-size: 20px;
+  text-transform: capitalize;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#contact {
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  border: 2px solid var(--accent-color-blue);
+  color: var(--accent-color-blue);
+  transition: 0s;
+}
+
+#contact:hover {
+  animation: buttonfill;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
